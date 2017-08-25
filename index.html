@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="shortcut icon" href="img/i_icon_30px.png" type="image/x-icon"/>
+
+        <title>Chair Info Form</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+        <!-- Optional theme -->
+        <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">-->
+        <!-- Bootswatch Darkly theme -->
+        <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet" title="main">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.css" />
+        <!-- Your custom styles (optional) -->
+        <link href="css/app.css" rel="stylesheet">
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <img class="hide" alt="IDEA Feedback Systems" src="img/i_icon_30px.png" style="margin: 8px 12px 20px 15px; display: inline-block">
+                    </div>
+
+                    <div class="pull-right">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="dropdown" id="theme-dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cogs icon-large"></i> <h3>Theme <b class="caret"></b></h3></a>
+                                <ul class="dropdown-menu">
+                                    <li role="separator" class="word-divider dark-menu">Dark</li>
+                                    <li class="theme-item active" id="li-darkly"><a href="#" class="change-style-menu-item dark-menu" name="darkly"><i class="icon-fixed-width icon-pencil"></i> Darkly (Default)</a></li>
+                                    <li class="theme-item" id="li-cyborg"><a href="#" class="change-style-menu-item dark-menu" name="cyborg"><i class="icon-fixed-width icon-pencil"></i> Cyborg</a></li>
+                                    <li class="theme-item" id="li-slate"><a href="#" class="change-style-menu-item dark-menu" name="slate"><i class="icon-fixed-width icon-pencil"></i> Slate</a></li>
+                                    <li class="theme-item" id="li-solar"><a href="#" class="change-style-menu-item dark-menu" name="solar"><i class="icon-fixed-width icon-pencil"></i> Solar</a></li>
+                                    <li class="theme-item" id="li-superhero"><a href="#" class="change-style-menu-item dark-menu" name="superhero"><i class="icon-fixed-width icon-pencil"></i> Superhero</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li role="separator" class="word-divider">Light</li>
+                                    <li class="theme-item" id="li-cerulean"><a href="#" class="change-style-menu-item" name="cerulean"><i class="icon-fixed-width icon-pencil"></i> Cerulean</a></li>
+                                    <li class="theme-item" id="li-cosmo"><a href="#" class="change-style-menu-item" name="cosmo"><i class="icon-fixed-width icon-pencil"></i> Cosmo</a></li>
+                                    <li class="theme-item" id="li-flatly"><a href="#" class="change-style-menu-item" name="flatly"><i class="icon-fixed-width icon-pencil"></i> Flatly</a></li>
+                                    <li class="theme-item" id="li-lumen"><a href="#" class="change-style-menu-item" name="lumen"><i class="icon-fixed-width icon-pencil"></i> Lumen</a></li>
+                                    <li class="theme-item" id="li-paper"><a href="#" class="change-style-menu-item" name="paper"><i class="icon-fixed-width icon-pencil"></i> Paper</a></li>
+                                    <li class="theme-item" id="li-spacelab"><a href="#" class="change-style-menu-item" name="spacelab"><i class="icon-fixed-width icon-pencil"></i> Spacelab</a></li>
+                                    <li class="theme-item" id="li-united"><a href="#" class="change-style-menu-item" name="united"><i class="icon-fixed-width icon-pencil"></i> United</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2 style="display: inline-block">E.A.Poe</h2>
+                    <h4 class="text-primary">Chair of English, IDEA University</h4>
+                    <h3>Chair Self-Assessment</h3>
+                    <p class="text-success">
+                        Please complete this survey in its entirety so that you can benefit from a full analysis and comprehensive report. 
+                        You should allow sufficient time (approximately 15-20 minutes) to respond thoughtfully to each item.
+                    </p>
+                </div>
+                <!--                <div class="col-md-3">
+                                    <div class="logo">
+                                        <img src="img/ideaLogo.png" alt="IDEA" class="hidden-print" id="idea-top-logo"/>
+                                        <img src="img/IDEA_cmyk.png" alt="IDEA" class="visible-print-block"/>
+                                    </div>
+                                </div>-->
+            </div>
+            <br><hr><br>
+
+            <div class="panel-group" id="reportSamplesContainer" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading heading-report-samples" role="tab" id="headingAdmin">
+                        <h4 class="panel-title">
+                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#reportSamplesContainer" href="#adminReportSamples" 
+                               aria-expanded="true" aria-controls="adminReportSamples"><span class="text-info">Part I-A. Responsibilities</span></a>
+                        </h4>
+                    </div>
+                    <div id="adminReportSamples" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <div class="col-md-4">
+                                <blockquote>
+                                    <p><small>
+                                            The list below describes responsibilities that are relevant to the role of chair. Please indicate your level of priority for each responsibility. 
+                                            Once you have responded to each of the 21 responsibilities, press the "Submit" button to continue with the survey.</small>
+                                    </p>
+                                </blockquote>
+
+                                <div class="panel panel-warning visible-xs-inline-block">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">RESPONSE OPTIONS</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><span class="text-primary">1 = Low Priority</span></li>
+                                            <li><span class="text-primary">2 = Moderate Priority</span></li>
+                                            <li><span class="text-primary">3 = High Priority</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="question-section">
+                                    <ol class="question-list">
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Attending to essential administrative tasks (e.g., class scheduling, staffing, finances/budgeting, facilities)
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Low Priority</span> 
+                                                        <span class="visible-xs-inline-block-xs">1</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Moderate Priority</span> 
+                                                        <span class="visible-xs-inline-block-xs">2</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">High Priority</span>
+                                                        <span class="visible-xs-inline-block-xs">3</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Fostering good teaching in the department (e.g., encourages course updating, use of appropriate technology, attending to student feedback)
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Low Priority</span> 
+                                                        <span class="visible-xs-inline-block-xs">1</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Moderate Priority</span> 
+                                                        <span class="visible-xs-inline-block-xs">2</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">High Priority</span>
+                                                        <span class="visible-xs-inline-block-xs">3</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Assisting in securing funding from external sources (e.g., grants, contracts, gifts, partnerships)
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Low Priority</span> 
+                                                        <span class="visible-xs-inline-block-xs">1</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Moderate Priority</span> 
+                                                        <span class="visible-xs-inline-block-xs">2</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">High Priority</span>
+                                                        <span class="visible-xs-inline-block-xs">3</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Leading in establishing and monitoring progress on annual or biannual department goals
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Low Priority</span> 
+                                                        <span class="visible-xs-inline-block-xs">1</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Moderate Priority</span> 
+                                                        <span class="visible-xs-inline-block-xs">2</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">High Priority</span>
+                                                        <span class="visible-xs-inline-block-xs">3</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading heading-report-samples" role="tab" id="headingChair">
+                        <h4 class="panel-title">
+                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#reportSamplesContainer" href="#chairReportSamples" 
+                               aria-expanded="false" aria-controls="chairReportSamples"><span class="text-info">Part I-B. Responsibilities</span></a>
+                        </h4>
+                    </div>
+                    <div id="chairReportSamples" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingChair" data-toggle="false">
+                        <div class="panel-body">
+                            <div class="col-md-4">
+                                <blockquote>
+                                    <p>
+                                        <small>
+                                            Now that you have prioritized your work, please rate your performance over the past year on each of the responsibilities. 
+                                            Select the number that best represents your judgment of how well you performed as chair.
+                                        </small>
+                                    </p>
+                                </blockquote>
+
+                                <div class="panel panel-warning">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">RESPONSE OPTIONS</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><span class="text-primary">1 = Poor</span></li>
+                                            <li><span class="text-primary">2 = Fair</span></li>
+                                            <li><span class="text-primary">3 = In Between</span></li>
+                                            <li><span class="text-primary">4 = Good</span></li>
+                                            <li><span class="text-primary">5 = Outstanding</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="question-section">
+                                    <ol class="question-list">
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Attending to essential administrative tasks (e.g., class scheduling, staffing, finances/budgeting, facilities)
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Fostering good teaching in the department (e.g., encourages course updating, use of appropriate technology, attending to student feedback)
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Assisting in securing funding from external sources (e.g., grants, contracts, gifts, partnerships)
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Leading in establishing and monitoring progress on annual or biannual department goals
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading heading-report-samples" role="tab" id="headingComment">
+                        <h4 class="panel-title">
+                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#reportSamplesContainer" href="#commentReportSamples" 
+                               aria-expanded="false" aria-controls="commentReportSamples"><span class="text-info">Part II. Personal Characteristics</span></a>
+                        </h4>
+                    </div>
+                    <div id="commentReportSamples" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingComment" data-toggle="false">
+                        <div class="panel-body">
+                            <div class="col-md-4">
+                                <blockquote>
+                                    <p>
+                                        <small>
+                                            To what degree do the qualities below represent a "strength" or a "weakness" for you? 
+                                            Select the number which best corresponds to your judgment of yourself.
+                                        </small>
+                                    </p>
+                                </blockquote>
+
+                                <div class="panel panel-warning">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">RESPONSE OPTIONS</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><span class="text-primary">1 = Definite Weakness</span></li>
+                                            <li><span class="text-primary">2 = More a Weakness Than a Strength</span></li>
+                                            <li><span class="text-primary">3 = In Between</span></li>
+                                            <li><span class="text-primary">4 = More a Strength Than a Weakness</span></li>
+                                            <li><span class="text-primary">5 = Definite Strength</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="question-section">
+                                    <ol class="question-list">
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Problem solving ability
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Demonstrates caring
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Practical judgment
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Trustworthy
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading heading-report-samples" role="tab" id="headingLikert">
+                        <h4 class="panel-title">
+                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#reportSamplesContainer" href="#likertReportSamples" 
+                               aria-expanded="false" aria-controls="likertReportSamples"><span class="text-info">Part III. Administrative Methods</span></a>
+                        </h4>
+                    </div>
+                    <div id="likertReportSamples" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLikert" data-toggle="false">
+                        <div class="panel-body">
+                            <div class="col-md-4">
+                                <blockquote>
+                                    <p>
+                                        <small>
+                                            To what degree do the following statements represent a "strength" or a "weakness" for you? 
+                                            Select the number which best corresponds to your judgment of yourself.
+                                        </small>
+                                    </p>
+                                </blockquote>
+
+                                <div class="panel panel-warning">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">RESPONSE OPTIONS</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li><span class="text-primary">1 = Definite Weakness</span></li>
+                                            <li><span class="text-primary">2 = More a Weakness Than a Strength</span></li>
+                                            <li><span class="text-primary">3 = In Between</span></li>
+                                            <li><span class="text-primary">4 = More a Strength Than a Weakness</span></li>
+                                            <li><span class="text-primary">5 = Definite Strength</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="question-section">
+                                    <ol class="question-list">
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Allocate faculty responsibilities in an effective and equitable manner
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Reduce, resolve, and/or prevent conflict among departmental faculty members
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Make sound suggestions for developing/changing departmental directions/priorities
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Assist faculty in developing their own goals and priorities
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading heading-report-samples" role="tab" id="headingChairInfo">
+                        <h4 class="panel-title">
+                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#reportSamplesContainer" href="#chairInfoContent" 
+                               aria-expanded="false" aria-controls="chairInfoContent"><span class="text-info">Chair Information</span></a>
+                        </h4>
+                    </div>
+                    <div id="chairInfoContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingChairInfo" data-toggle="false">
+                        <div class="panel-body">
+                            <div class="col-md-4">
+                                <blockquote>
+                                    <p>
+                                        <small>
+                                            This final section of the Chair Information Form includes four questions about your role as chair and this survey process. 
+                                            Your responses will be used to further research about the effective functioning of chairs and will not have an impact on your results.
+                                        </small>
+                                    </p>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="question-section">
+                                    <ol class="question-list">
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Please select the response that best represents your selection/appointment as chair.
+                                                </label>
+                                                <div class="">
+                                                    <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                        <label class="btn btn-primary">
+                                                            <input type="radio" autocomplete="off"> Internal search within the department
+                                                        </label>
+                                                        <label class="btn btn-primary">
+                                                            <input type="radio" autocomplete="off"> Internal search within the institution but external to the department
+                                                        </label>
+                                                        <label class="btn btn-primary">
+                                                            <input type="radio" autocomplete="off"> External search to the institution
+                                                        </label>
+                                                        <label class="btn btn-primary">
+                                                            <input type="radio" autocomplete="off"> Other
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Counting the current year, how long have you served as chair?
+                                                </label>
+                                                <div class="">
+                                                    <input type="number" class="form-control" id="numberYearsChair">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Approximately what percent of the courses in your department are taught by adjunct/part-time/contingent faculty?
+                                                </label>
+                                                <div class="">
+                                                    <input
+                                                        type="text"
+                                                        name="percentTaught"
+                                                        data-provide="slider"
+                                                        data-slider-min="0"
+                                                        data-slider-max="100"
+                                                        data-slider-step="1"
+                                                        data-slider-value=""
+                                                        data-slider-id='percentTaught'
+                                                        style="width: 90%;"
+                                                        >
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Leading in establishing and monitoring progress on annual or biannual department goals
+                                                </label>
+
+                                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> All adjunct faculty were invited to participate
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> Only some adjunct faculty were invited to participate
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> No adjunct faculty were invited to participate
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> I don't know
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> Not applicable, we don't have adjuncts in my department
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+div.logo {
+    position: absolute;
+    top: -55px;
+    right: -10px;
+    z-index: 1002;
+}
+
+div.panel-body
+{
+    padding: 15px 10px 10px;
+}
+
+a, a:hover, a:visited, a:active
+{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a.reportSamplesButton
+{
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+}
+
+ul
+{
+    padding-left: 15px;
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+ol.question-list
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 1px solid #848484;
+}
+
+ol.question-list li
+{
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+ol.question-list li:nth-child(odd)
+{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+
+ol.question-list li:last-child
+{
+    border-bottom: none;
+}
+
+blockquote small::before
+{
+    content: '';
+}
+
+.btn-group label.btn
+{
+    margin-left: 5px !important;
+}
+
+div.slider
+{
+    /*margin-left: 5%;*/
+}
+
+input#numberYearsChair
+{
+    max-width: 80px;
+}
+
+.btn-group-vertical label
+{
+    text-align: left;
+}
+
+label.control-label
+{
+    margin-bottom: 15px;
+}
+
+.dark-menu
+{
+    /*background: #464545; */
+}
+
+@media screen and (max-width: 768px)
+{
+    .col-md-4
+    {
+        margin-bottom: 15px;
+    }
+}
