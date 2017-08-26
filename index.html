@@ -12,16 +12,18 @@
         <!-- Optional theme -->
         <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">-->
         <!-- Bootswatch Darkly theme -->
-        <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
         <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet" title="main">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.css" />
         <!-- Your custom styles (optional) -->
         <link href="css/app.css" rel="stylesheet">
 
         <!-- JQuery -->
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!--        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.min.js"></script>
         <script src="js/app.js"></script>
     </head>
@@ -88,15 +90,25 @@
             </div>
             <br><hr><br>
 
-            <div class="panel-group" id="reportSamplesContainer" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
+
+            <div class="panel-group" id="chair-info-form-container" role="tablist" aria-multiselectable="true">
+
+                <div class="panel panel-default" id="part1a-panel">
                     <div class="panel-heading heading-report-samples" role="tab" id="headingAdmin">
                         <h4 class="panel-title">
-                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#reportSamplesContainer" href="#adminReportSamples" 
-                               aria-expanded="true" aria-controls="adminReportSamples"><span class="text-info">Part I-A. Responsibilities</span></a>
+                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#chair-info-form-container" href="#section-part1a" 
+                               aria-expanded="true" aria-controls="section-part1a">
+                                <span class="row">
+                                    <span class="text-info col-xs-4">Part I-A. Responsibilities</span>
+                                    <span class="progress col-xs-6 pull-right">
+                                        <span class="progress-bar progress-bar-info " style="width: 0%;"></span>
+                                    </span>
+                                </span>
+                            </a>
                         </h4>
                     </div>
-                    <div id="adminReportSamples" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+                    <div id="section-part1a" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body">
                             <div class="col-md-4">
                                 <blockquote>
@@ -120,25 +132,28 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <div class="question-section">
+                                <div class="question-section" id="part1a">
                                     <ol class="question-list">
                                         <li>
                                             <div class="form-group">
                                                 <label class="control-label">
                                                     Attending to essential administrative tasks (e.g., class scheduling, staffing, finances/budgeting, facilities)
                                                 </label>
-                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                <div class="btn-group btn-group-justified part1a-q" data-toggle="buttons">
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Low Priority</span> 
-                                                        <span class="visible-xs-inline-block-xs">1</span>
+                                                        <input type="radio" autocomplete="off" value="1" required=""> 
+                                                        <span class="hidden-xs">Low Priority</span> 
+                                                        <span class="visible-xs-inline-block">1</span>
                                                     </label>
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Moderate Priority</span> 
-                                                        <span class="visible-xs-inline-block-xs">2</span>
+                                                        <input type="radio" autocomplete="off" value="2" required=""> 
+                                                        <span class="hidden-xs">Moderate Priority</span> 
+                                                        <span class="visible-xs-inline-block">2</span>
                                                     </label>
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">High Priority</span>
-                                                        <span class="visible-xs-inline-block-xs">3</span>
+                                                        <input type="radio" autocomplete="off" value="3" required=""> 
+                                                        <span class="hidden-xs">High Priority</span>
+                                                        <span class="visible-xs-inline-block">3</span>
                                                     </label>
                                                 </div>
                                             </div>
@@ -148,18 +163,18 @@
                                                 <label class="control-label">
                                                     Fostering good teaching in the department (e.g., encourages course updating, use of appropriate technology, attending to student feedback)
                                                 </label>
-                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                <div class="btn-group btn-group-justified part1a-q" data-toggle="buttons">
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Low Priority</span> 
-                                                        <span class="visible-xs-inline-block-xs">1</span>
+                                                        <input type="radio" autocomplete="off" value="1"> <span class="hidden-xs">Low Priority</span> 
+                                                        <span class="visible-xs-inline-block">1</span>
                                                     </label>
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Moderate Priority</span> 
-                                                        <span class="visible-xs-inline-block-xs">2</span>
+                                                        <input type="radio" autocomplete="off" value="2"> <span class="hidden-xs">Moderate Priority</span> 
+                                                        <span class="visible-xs-inline-block">2</span>
                                                     </label>
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">High Priority</span>
-                                                        <span class="visible-xs-inline-block-xs">3</span>
+                                                        <input type="radio" autocomplete="off" value="3"> <span class="hidden-xs">High Priority</span>
+                                                        <span class="visible-xs-inline-block">3</span>
                                                     </label>
                                                 </div>
                                             </div>
@@ -169,18 +184,18 @@
                                                 <label class="control-label">
                                                     Assisting in securing funding from external sources (e.g., grants, contracts, gifts, partnerships)
                                                 </label>
-                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                <div class="btn-group btn-group-justified part1a-q" data-toggle="buttons">
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Low Priority</span> 
-                                                        <span class="visible-xs-inline-block-xs">1</span>
+                                                        <input type="radio" autocomplete="off" value="1"> <span class="hidden-xs">Low Priority</span> 
+                                                        <span class="visible-xs-inline-block">1</span>
                                                     </label>
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Moderate Priority</span> 
-                                                        <span class="visible-xs-inline-block-xs">2</span>
+                                                        <input type="radio" autocomplete="off" value="2"> <span class="hidden-xs">Moderate Priority</span> 
+                                                        <span class="visible-xs-inline-block">2</span>
                                                     </label>
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">High Priority</span>
-                                                        <span class="visible-xs-inline-block-xs">3</span>
+                                                        <input type="radio" autocomplete="off" value="3"> <span class="hidden-xs">High Priority</span>
+                                                        <span class="visible-xs-inline-block">3</span>
                                                     </label>
                                                 </div>
                                             </div>
@@ -190,18 +205,60 @@
                                                 <label class="control-label">
                                                     Leading in establishing and monitoring progress on annual or biannual department goals
                                                 </label>
-                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                <div class="btn-group btn-group-justified part1a-q" data-toggle="buttons">
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Low Priority</span> 
-                                                        <span class="visible-xs-inline-block-xs">1</span>
+                                                        <input type="radio" autocomplete="off" value="1"> <span class="hidden-xs">Low Priority</span> 
+                                                        <span class="visible-xs-inline-block">1</span>
                                                     </label>
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">Moderate Priority</span> 
-                                                        <span class="visible-xs-inline-block-xs">2</span>
+                                                        <input type="radio" autocomplete="off" value="2"> <span class="hidden-xs">Moderate Priority</span> 
+                                                        <span class="visible-xs-inline-block">2</span>
                                                     </label>
                                                     <label class="btn btn-primary">
-                                                        <input type="radio" autocomplete="off"> <span class="hidden-xs">High Priority</span>
-                                                        <span class="visible-xs-inline-block-xs">3</span>
+                                                        <input type="radio" autocomplete="off" value="3"> <span class="hidden-xs">High Priority</span>
+                                                        <span class="visible-xs-inline-block">3</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Guiding the development of sound procedures for assessing faculty performance
+                                                </label>
+                                                <div class="btn-group btn-group-justified part1a-q" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off" value="1"> <span class="hidden-xs">Low Priority</span> 
+                                                        <span class="visible-xs-inline-block">1</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off" value="2"> <span class="hidden-xs">Moderate Priority</span> 
+                                                        <span class="visible-xs-inline-block">2</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off" value="3"> <span class="hidden-xs">High Priority</span>
+                                                        <span class="visible-xs-inline-block">3</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Facilitating successful recruitment and selection of promising faculty
+                                                </label>
+                                                <div class="btn-group btn-group-justified part1a-q" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off" value="1"> <span class="hidden-xs">Low Priority</span> 
+                                                        <span class="visible-xs-inline-block">1</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off" value="2"> <span class="hidden-xs">Moderate Priority</span> 
+                                                        <span class="visible-xs-inline-block">2</span>
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off" value="3"> <span class="hidden-xs">High Priority</span>
+                                                        <span class="visible-xs-inline-block">3</span>
                                                     </label>
                                                 </div>
                                             </div>
@@ -213,14 +270,22 @@
                     </div>
                 </div>
 
-                <div class="panel panel-default">
+                <div class="panel panel-default" id="part1b-panel">
                     <div class="panel-heading heading-report-samples" role="tab" id="headingChair">
                         <h4 class="panel-title">
-                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#reportSamplesContainer" href="#chairReportSamples" 
-                               aria-expanded="false" aria-controls="chairReportSamples"><span class="text-info">Part I-B. Responsibilities</span></a>
+                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#chair-info-form-container" href="#section-part1b" 
+                               aria-expanded="false" aria-controls="section-part1b">
+                                <span class="row">
+                                    <span class="text-info col-xs-4">Part I-B. Responsibilities</span>
+                                    <span class="progress col-xs-6 pull-right">
+                                        <span class="progress-bar progress-bar-info " style="width: 0%;"></span>
+                                    </span>
+                                </span>
+                            </a>
                         </h4>
                     </div>
-                    <div id="chairReportSamples" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingChair" data-toggle="false">
+
+                    <div id="section-part1b" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingChair" data-toggle="false">
                         <div class="panel-body">
                             <div class="col-md-4">
                                 <blockquote>
@@ -248,7 +313,7 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <div class="question-section">
+                                <div class="question-section" id="part1b">
                                     <ol class="question-list">
                                         <li>
                                             <div class="form-group">
@@ -353,14 +418,21 @@
                     </div>
                 </div>
 
-                <div class="panel panel-default">
+                <div class="panel panel-default" id="part2-panel">
                     <div class="panel-heading heading-report-samples" role="tab" id="headingComment">
                         <h4 class="panel-title">
-                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#reportSamplesContainer" href="#commentReportSamples" 
-                               aria-expanded="false" aria-controls="commentReportSamples"><span class="text-info">Part II. Personal Characteristics</span></a>
+                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#chair-info-form-container" href="#section-part2" 
+                               aria-expanded="false" aria-controls="section-part2">
+                                <span class="row">
+                                    <span class="text-info col-xs-4">Part II. Personal Characteristics</span>
+                                    <span class="progress col-xs-6 pull-right">
+                                        <span class="progress-bar progress-bar-info " style="width: 0%;"></span>
+                                    </span>
+                                </span>
+                            </a>
                         </h4>
                     </div>
-                    <div id="commentReportSamples" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingComment" data-toggle="false">
+                    <div id="section-part2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingComment" data-toggle="false">
                         <div class="panel-body">
                             <div class="col-md-4">
                                 <blockquote>
@@ -388,7 +460,7 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <div class="question-section">
+                                <div class="question-section" id="part2">
                                     <ol class="question-list">
                                         <li>
                                             <div class="form-group">
@@ -486,6 +558,78 @@
                                                 </div>
                                             </div>
                                         </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Fairness
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Consistency
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Organizational skills
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
                                     </ol>
                                 </div>
                             </div>
@@ -493,14 +637,21 @@
                     </div>
                 </div>
 
-                <div class="panel panel-default">
+                <div class="panel panel-default" id="part3-panel">
                     <div class="panel-heading heading-report-samples" role="tab" id="headingLikert">
                         <h4 class="panel-title">
-                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#reportSamplesContainer" href="#likertReportSamples" 
-                               aria-expanded="false" aria-controls="likertReportSamples"><span class="text-info">Part III. Administrative Methods</span></a>
+                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#chair-info-form-container" href="#section-part3" 
+                               aria-expanded="false" aria-controls="section-part3">
+                                <span class="row">
+                                    <span class="text-info col-xs-4">Part III. Administrative Methods</span>
+                                    <span class="progress col-xs-6 pull-right">
+                                        <span class="progress-bar progress-bar-info " style="width: 0%;"></span>
+                                    </span>
+                                </span>
+                            </a>
                         </h4>
                     </div>
-                    <div id="likertReportSamples" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLikert" data-toggle="false">
+                    <div id="section-part3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLikert" data-toggle="false">
                         <div class="panel-body">
                             <div class="col-md-4">
                                 <blockquote>
@@ -528,7 +679,7 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <div class="question-section">
+                                <div class="question-section" id="part3">
                                     <ol class="question-list">
                                         <li>
                                             <div class="form-group">
@@ -626,6 +777,30 @@
                                                 </div>
                                             </div>
                                         </li>
+                                        <li>
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Effectively advocate for departmental interests to higher authorities
+                                                </label>
+                                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 1
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 2
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 3
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 4
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" autocomplete="off"> 5
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
                                     </ol>
                                 </div>
                             </div>
@@ -633,11 +808,18 @@
                     </div>
                 </div>
 
-                <div class="panel panel-default">
+                <div class="panel panel-default" id="part4-panel">
                     <div class="panel-heading heading-report-samples" role="tab" id="headingChairInfo">
                         <h4 class="panel-title">
-                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#reportSamplesContainer" href="#chairInfoContent" 
-                               aria-expanded="false" aria-controls="chairInfoContent"><span class="text-info">Chair Information</span></a>
+                            <a class="reportSamplesButton" role="button" data-toggle="collapse" data-parent="#chair-info-form-container" href="#chairInfoContent" 
+                               aria-expanded="false" aria-controls="chairInfoContent">
+                                <span class="row">
+                                    <span class="text-info col-xs-4">Chair Information</span>
+                                    <span class="progress col-xs-6 pull-right">
+                                        <span class="progress-bar progress-bar-info " style="width: 0%;"></span>
+                                    </span>
+                                </span>
+                            </a>
                         </h4>
                     </div>
                     <div id="chairInfoContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingChairInfo" data-toggle="false">
@@ -653,7 +835,7 @@
                                 </blockquote>
                             </div>
                             <div class="col-md-8">
-                                <div class="question-section">
+                                <div class="question-section" id="part4">
                                     <ol class="question-list">
                                         <li>
                                             <div class="form-group">
@@ -683,8 +865,8 @@
                                                 <label class="control-label">
                                                     Counting the current year, how long have you served as chair?
                                                 </label>
-                                                <div class="">
-                                                    <input type="number" class="form-control" id="numberYearsChair">
+                                                <div class="form-control-parent">
+                                                    <input type="number" class="form-control" id="numberYearsChair" min="0" max="50">
                                                 </div>
                                             </div>
                                         </li>
@@ -693,7 +875,7 @@
                                                 <label class="control-label">
                                                     Approximately what percent of the courses in your department are taught by adjunct/part-time/contingent faculty?
                                                 </label>
-                                                <div class="">
+                                                <div class="form-control-parent">
                                                     <input
                                                         type="text"
                                                         name="percentTaught"
@@ -704,6 +886,7 @@
                                                         data-slider-value=""
                                                         data-slider-id='percentTaught'
                                                         style="width: 90%;"
+                                                        class="form-control"
                                                         >
                                                 </div>
                                             </div>
@@ -740,6 +923,15 @@
                     </div>
                 </div>
 
+            </div> <!-- End of collapsible accordion -->
+
+            <br><hr><br>
+            <div><h5 class="text-primary">Form completion progress:</h5></div>
+
+            <div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" id="overallProgress" style="width: 0%"></div>
+                </div>
             </div>
 
         </div>

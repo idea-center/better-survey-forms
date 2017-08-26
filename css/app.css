@@ -90,6 +90,29 @@ label.control-label
     /*background: #464545; */
 }
 
+span.row, span.progress
+{
+    margin: 0;
+    padding: 0;
+}
+
+span.progress
+{
+    opacity: 0;
+    height: 18px;
+}
+
+span.progress-bar {
+    display: inline-block;
+    height: 18px;
+    font-size: 14px !important;
+}
+
+span.spacer
+{
+    display: inline-block;
+}
+
 @media screen and (max-width: 768px)
 {
     .col-md-4
