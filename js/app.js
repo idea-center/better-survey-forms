@@ -56,7 +56,7 @@ function updateProgress(input)
     prog = getCompletedQuestionCount() * 100 / totalQuestions;
     
     var overallProgress = $('#overallProgress');
-    console.log(overallProgress);
+    //console.log(prog);
     $(overallProgress).css('width', prog + '%');
     
     if (prog >= 75.0)
@@ -67,6 +67,8 @@ function updateProgress(input)
     {
         $(overallProgress).removeClass('progress-bar-danger').addClass('progress-bar-warning');
     }
+    
+    if (prog == 100) $('#submitButton').removeClass('transparent', 1000);
 }
 
 function set_theme(theme, theme_name) {
